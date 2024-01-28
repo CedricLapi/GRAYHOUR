@@ -39,7 +39,7 @@ const GrayHour2 = () => {
         axios.get(`${apiEndpoint}${clickWord}`)
         .then((res) => {
             console.log("onClick res", res.data[0].meanings[0].definitions[0].definition)
-            setClickWord(res.data[0]?.meanings[0]?.definitions[0]?.defintion)
+            setClickWord(res.data[0]?.meanings[0]?.definitions[0]?.definition)
         })
         .catch((err) => {
             console.log("ERROR from onClick", err);
